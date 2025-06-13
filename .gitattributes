@@ -1,0 +1,19 @@
+# Автоматическая нормализация окончания строк (CRLF ↔ LF)
+* text=auto
+
+# Правила для Python-файлов
+*.py diff=python
+
+# Убедимся, что двоичные файлы не будут коверкаться
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.exe binary
+
+# Поддержка Jupyter Notebook (если используешь)
+*.ipynb text
+
+# Markdown — читаемый дифф
+*.md text diff=markdown
